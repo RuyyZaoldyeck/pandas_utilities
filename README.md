@@ -14,4 +14,6 @@ def make_int(i):
         return pd.np.nan
         
 print(df.isnull().values.any())
+
+df['Salary'] = df['Salary'].map(make_int)
 ```
